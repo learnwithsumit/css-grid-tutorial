@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Gallery</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 3px;
+        grid-auto-flow: dense;
+      }
+      .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .horizontal {
+        grid-column: span 2;
+      }
+      .vertical {
+        grid-row: span 2;
+      }
+      .big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><img src="images/normal1.jpg" /></div>
+      <div class="vertical"><img src="images/vertical1.jpg" /></div>
+      <div class="horizontal"><img src="images/horizontal1.jpg" /></div>
+      <div><img src="images/normal2.jpg" /></div>
+      <div><img src="images/normal3.jpg" /></div>
+      <div class="big"><img src="images/big1.jpg" /></div>
+      <div><img src="images/normal4.jpg" /></div>
+      <div class="vertical"><img src="images/vertical2.jpg" /></div>
+      <div><img src="images/normal5.jpg" /></div>
+      <div class="horizontal"><img src="images/horizontal2.jpg" /></div>
+      <div><img src="images/normal6.jpg" /></div>
+      <div class="big"><img src="images/big2.jpg" /></div>
+      <div><img src="images/normal7.jpg" /></div>
+      <div class="horizontal"><img src="images/horizontal3.jpg" /></div>
+      <div><img src="images/normal8.jpg" /></div>
+      <div class="big"><img src="images/big3.jpg" /></div>
+      <div><img src="images/normal9.jpg" /></div>
+      <div class="vertical"><img src="images/vertical3.jpg" /></div>
+    </div>
+  </body>
+</html>
